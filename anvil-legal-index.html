@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anvil — Privacy and Support</title>
+    <style>
+      /* Monochrome like the app: black, white, greys in between. */
+      :root {
+        --bg: #ffffff;
+        --text: #0a0a0a;
+        --muted: #6b7076;
+        --border: #e3e3e5;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #000000;
+          --text: #fafafa;
+          --muted: #8e9297;
+          --border: #26262a;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 3rem 1.25rem 5rem;
+        background: var(--bg);
+        color: var(--text);
+        font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      main { max-width: 38rem; margin: 0 auto; }
+      h1 { font-size: 2rem; letter-spacing: -0.5px; margin: 0 0 0.25rem; }
+      h2 {
+        font-size: 1.25rem;
+        letter-spacing: -0.2px;
+        margin: 2.5rem 0 0.75rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border);
+      }
+      h3 { font-size: 1rem; margin: 1.75rem 0 0.5rem; }
+      .lead, .meta, footer { color: var(--muted); }
+      .meta { font-size: 0.875rem; margin: 0 0 2rem; }
+      ul { padding-left: 1.25rem; }
+      li { margin: 0.4rem 0; }
+      a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+      strong { font-weight: 600; }
+      footer {
+        margin-top: 3.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border);
+        font-size: 0.875rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Anvil</h1>
+      <p class="lead">A workout log for iPhone. Privacy and support.</p>
+      <p class="meta">Last updated: 10 August 2026</p>
+
+      <h2>Privacy Policy</h2>
+
+      <p>
+        <strong>Anvil collects no data.</strong> There is no account, no sign
+        in, and no server for the app to talk to.
+      </p>
+
+      <h3>Where your training data lives</h3>
+      <p>
+        Exercises, sessions, sets, routines and settings are stored only in a
+        database on your device. They never leave it.
+      </p>
+
+      <h3>What Anvil does not do</h3>
+      <ul>
+        <li>No network connection — the app contacts no servers.</li>
+        <li>No analytics, no usage statistics, no crash reporting.</li>
+        <li>No advertising and no advertising identifiers.</li>
+        <li>No sharing of data with third parties.</li>
+        <li>No access to contacts, photos, location or health data.</li>
+      </ul>
+
+      <h3>Backup files</h3>
+      <p>
+        Anvil can export your data to a file. That file is created only when you
+        start the export yourself, and where it goes is entirely your choice
+        through the iOS share sheet. The app does not upload it anywhere.
+      </p>
+
+      <h3>Your iPhone's iCloud backup</h3>
+      <p>
+        If you use Apple's device backup, it may include Anvil's data — as it
+        does for any other app. That is a feature of iOS and is governed by
+        Apple's privacy policy; Anvil itself transmits nothing.
+      </p>
+
+      <h3>Deleting your data</h3>
+      <p>
+        Deleting Anvil from your device removes all of its data. Nothing is left
+        behind, because nothing is stored anywhere else.
+      </p>
+
+      <h3>Changes</h3>
+      <p>
+        If any of this ever changes, it will be stated here, with a new date,
+        before a version ships that it applies to.
+      </p>
+
+      <h2 id="support">Support</h2>
+      <p>
+        Questions, bugs and requests belong on the project page:
+        <a href="https://github.com/timonheitz/anvil/issues"
+          >github.com/timonheitz/anvil/issues</a
+        >. A bug report is most useful with your device, iOS version, and what
+        you did just before it happened.
+      </p>
+
+      <footer>Anvil — local, offline, no account.</footer>
+    </main>
+  </body>
+</html>
