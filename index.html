@@ -1,4 +1,10 @@
 <!doctype html>
+<!--
+  This file is the source copy. The live page is a separate public repo,
+  timonheitz/anvil-legal, because this repo (timonheitz/anvil) stays
+  private — GitHub Pages needs a public repo (or a paid plan) to serve
+  from. Edit here, then copy the file over to anvil-legal by hand.
+-->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -58,13 +64,13 @@
     <main>
       <h1>Anvil</h1>
       <p class="lead">A workout log for iPhone. Privacy and support.</p>
-      <p class="meta">Last updated: 10 August 2026</p>
+      <p class="meta">Last updated: 16 August 2026</p>
 
       <h2>Privacy Policy</h2>
 
       <p>
         <strong>Anvil collects no data.</strong> There is no account, no sign
-        in, and no server for the app to talk to.
+        in, and no server that your training data is sent to.
       </p>
 
       <h3>Where your training data lives</h3>
@@ -75,7 +81,8 @@
 
       <h3>What Anvil does not do</h3>
       <ul>
-        <li>No network connection — the app contacts no servers.</li>
+        <li>No account, no sign in, no cloud sync — your training data
+          never leaves your device.</li>
         <li>No analytics, no usage statistics, no crash reporting.</li>
         <li>No advertising and no advertising identifiers.</li>
         <li>No sharing of data with third parties.</li>
@@ -89,11 +96,23 @@
         through the iOS share sheet. The app does not upload it anywhere.
       </p>
 
+      <h3>App updates</h3>
+      <p>
+        When Anvil starts, it asks Expo's update service
+        (u.expo.dev) whether a newer version of the app is
+        available. That request carries only what is needed to answer it — the
+        app version, the platform, and the release channel — plus your IP
+        address, as any internet request does. It contains none of your
+        training data, and nothing about you is stored or used to identify you.
+        This is the only time Anvil talks to a server; without an internet
+        connection the app works exactly the same.
+      </p>
+
       <h3>Your iPhone's iCloud backup</h3>
       <p>
         If you use Apple's device backup, it may include Anvil's data — as it
         does for any other app. That is a feature of iOS and is governed by
-        Apple's privacy policy; Anvil itself transmits nothing.
+        Apple's privacy policy; Anvil itself transmits none of your data.
       </p>
 
       <h3>Deleting your data</h3>
